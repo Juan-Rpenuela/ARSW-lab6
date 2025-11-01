@@ -1,7 +1,0 @@
-co\edu\escuelaing\interactiveblackboard\App.class
-co\edu\escuelaing\interactiveblackboard\config\WebSocketConfig.class
-co\edu\escuelaing\interactiveblackboard\controllers\DrawingServiceController.class
-co\edu\escuelaing\interactiveblackboard\BBAppStarter.class
-co\edu\escuelaing\interactiveblackboard\controllers\StatusController.class
-co\edu\escuelaing\interactiveblackboard\model\DrawingUpdate.class
-co\edu\escuelaing\interactiveblackboard\model\Point.class
