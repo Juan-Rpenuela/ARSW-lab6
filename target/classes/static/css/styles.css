@@ -1,0 +1,176 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.app-container {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tool-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tool-group label {
+    font-weight: 600;
+    color: #333;
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.tool-btn {
+    background: #667eea;
+    color: white;
+}
+
+.tool-btn:hover {
+    background: #5568d3;
+}
+
+.tool-btn.active {
+    background: #764ba2;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.clear-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.clear-btn:hover {
+    background: #c0392b;
+}
+
+.color-picker {
+    width: 50px;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.color-picker:hover {
+    border-color: #667eea;
+}
+
+.size-slider {
+    width: 120px;
+    cursor: pointer;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+canvas {
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: crosshair;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+    margin-top: 15px;
+    padding: 10px;
+    background: #e8f4f8;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.status.connected {
+    background: #d4edda;
+    border-left-color: #28a745;
+}
+
+.status.disconnected {
+    background: #f8d7da;
+    border-left-color: #dc3545;
+}
+
+.info {
+    margin-top: 15px;
+    padding: 12px;
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #856404;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #eee;
+    margin: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .toolbar {
+        flex-direction: column;
+    }
+    
+    .tool-group {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
